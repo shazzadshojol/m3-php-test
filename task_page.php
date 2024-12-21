@@ -10,6 +10,7 @@ function loadFunction(): array
     }
 
     $data = file_get_contents(TASK_FILE);
+    
 
     return $data ? json_decode($data, true) : [];
 }
